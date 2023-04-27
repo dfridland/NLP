@@ -1,0 +1,16 @@
+Задача поиск похожих по эмбеддингам
+
+Скачиваем датасет ([источник](http://study.mokoron.com/)): [положительные](https://www.dropbox.com/s/fnpq3z4bcnoktiv/positive.csv?dl=0), [отрицательные](https://www.dropbox.com/s/r6u59ljhhjdg6j0/negative.csv).
+
+или можно через ноутбук
+
+!wget https://www.dropbox.com/s/fnpq3z4bcnoktiv/positive.csv
+!wget https://www.dropbox.com/s/r6u59ljhhjdg6j0/negative.csv
+
+что надо сделать 
+1. объединить в одну выборку
+2. на основе word2vec/fasttext/glove/слоя Embedding реализовать метод поиска ближайших твитов
+
+на вход метода должен приходить запрос (какой-то твит, вопрос) и количество вариантов вывода к примеру 5-ть, ваш метод должен возвращать 5-ть ближайших твитов к этому запросу.
+
+3. Проверить насколько хорошо работают подходы
